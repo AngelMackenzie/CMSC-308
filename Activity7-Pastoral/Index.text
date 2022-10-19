@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+ // Compiler version JDK 11.0.2
+
+ class Dcoder
+ {  
+  public static void main(String [] args) 
+  {
+       
+       Scanner scan = new Scanner(System.in);
+
+   System.out.println("Calculator Menu" );
+   System.out.println("==================");
+   System.out.println("1. Addition");
+   System.out.println("2. Subraction");
+   System.out.println("3. Multiplication");
+   System.out.println("4. Division");
+   System.out.println("5. Modulo");
+   System.out.println("6. Exponent");
+   System.out.println("==================");
+   
+   
+    int x, firstnumber, secondnumber;
+    System.out.println("Choose Operation: ");
+    x= scan.nextInt();
+    
+    System.out.println("First number: ");
+    firstnumber= scan.nextInt();
+    System.out.println("Second number: ");
+    secondnumber= scan.nextInt();
+    
+    switch (x)
+    {
+    case 1:
+       x = firstnumber + secondnumber;
+       System.out.println("Addition: "+ x );
+       break;
+    case 2:
+       x = firstnumber - secondnumber;
+       System.out.println("Subtraction: "+ x );
+       break;
+    case 3:
+       x = firstnumber * secondnumber;
+       System.out.println("Multiplication: "+ x );
+       break;
+    case 4:
+       x = firstnumber / secondnumber;
+       System.out.println("Division: "+ x );
+       break;
+    case 5:
+       x = firstnumber % secondnumber;
+       System.out.println("Modulo: "+ x );
+       break;
+    case 6:
+      long exponent = (long) Math.pow(firstnumber , secondnumber);
+       System.out.println("Exponent: "+ x );
+       break;
+     
+   
+    }
+  }  
+  }
